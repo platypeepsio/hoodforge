@@ -32,7 +32,7 @@ const scoreMetrics: ScoreMetric[] = [
 ];
 
 function useInView(threshold = 0.3) {
-  const ref = useRef<HTMLElement | null>(null);
+  const ref = useRef<HTMLDivElement | null>(null); 
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
